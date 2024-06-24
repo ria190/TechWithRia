@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6b18803b8d.js" crossorigin="anonymous"></script>
+    <script
+    type="module"
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script
+    nomodule
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#about">RESUME</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#portfolio">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h3>Hello, I am</h3>
+                <h1>Ria Chugh</h1>
+                <h3>and I am a <span class="multiple-text"></span>
+                </h3>
+            </div>
+        </div>
+    </div>
+    <!---------about--------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+            <div class="col-1">
+            <img src="images/temp.png" alt="" class="about_img">
+            </div>
+            <div class="col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hey there! I'm an enthusiastic web developer with a passion for learning and experimenting with new technologies. My journey in the tech world is fueled by a deep curiosity and a desire to constantly push the boundaries of what I can create and achieve. With a strong foundation in design, I bring a keen eye for aesthetics and usability to all my projects. 
+                    <br>
+                    <br>
+                    In addition to my web development and design skills, I'm also a dedicated coder who thrives in the competitive programming arena. The challenges and problem-solving aspects of competitive programming keep me sharp and constantly evolving in my craft.
+                    <br>
+                    <br>
+                    Whether I'm building a sleek, responsive website or tackling a complex algorithmic problem, my goal is to deliver top-notch solutions that exceed expectations. Let's connect and create something amazing together!
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="education">
+                    <div class="education">
+                        <div class="timeline">
+                            <div class="timeline_item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline_title">B.Tech in Information Technology</h3>
+                            <p class="timeline_text">IIIT Allahabad, Prayagraj</p>
+                            <span class="timeline_date">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                2022-Present
+                            </span>
+                        </div>
+                        <div class="timeline_item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline_title">CBSE Class XII <sup>th</sup></h3>
+                            <p class="timeline_text">Bal Niketan Sr. Sec. School, Chadigarh</p>
+                            <span class="timeline_date">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                2020-21
+                            </span>
+                        </div>
+                        <div class="timeline_item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline_title">CBSE Class X <sup>th</sup></h3>
+                            <p class="timeline_text">Learning Paths School, Mohali</p>
+                            <span class="timeline_date">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                2018-19
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <a href="Ria_Chugh_Resume.pdf" download="" class="btn btn2">Download CV</a>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span> Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br> Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span> Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br> Building Android/iOS apps</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>  
+    </div>
+    <!-- ----------skills----------->
+     <div id="skills">
+        <div class="container">
+            <div class="time-line-section">
+                <div class="time-line-content">
+                    <div class="heading-description">
+                        <h1 class="time-line-subheading sub-title">Skills</h1>
+                    </div>
+                    <div class="timeline2">
+                        <div class="line"></div>
+                        <div class="time-line-description">
+                            <div class="mini-circle"></div>
+                            <div class="content">
+                                <h2 class="content-timeline-title">
+                                       Languages
+                                </h2>
+                                <p class="content-timeline-description">
+                                   <ul class="content-timeline-description2">
+                                    <li>proficient: C/C++</li>
+                                    <li>Intermediate: Java</li>
+                                    <li>Basic: Python</li>
+                                   </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="time-line-description">
+                            <div class="mini-circle"></div>
+                            <div class="content">
+                                <h2 class="content-timeline-title">
+                                   HTML/CSS
+                                </h2>
+                                <p class="content-timeline-description">
+                                    I have a strong command of HTML and CSS, and extensive skills in UI/UX design, enabling me to create and design effective frontends for projects.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="time-line-description">
+                            <div class="mini-circle"></div>
+                            <div class="content">
+                                <h2 class="content-timeline-title">
+                                    Web Design
+                                </h2>
+                                <p class="content-timeline-description">
+                                    My expertise includes responsive design, ensuring websites function seamlessly across devices. I am adept at using design tools like Figma, focusing on enhancing user experience and interface aesthetics. Additionally, I am familiar with JavaScript to add interactivity to web pages.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="time-line-description">
+                            <div class="mini-circle"></div>
+                            <div class="content">
+                                <h2 class="content-timeline-title">
+                                   Web Development
+                                </h2>
+                                <p class="content-timeline-description">
+                                    I have a solid foundation in web development using React.js, enabling me to build dynamic and interactive web applications. My expertise includes creating reusable components.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+     </div>
+    <!---------services---------->
+    <!-- <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <h2>serv2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, modi!</p>
+                </div>
+                <div>
+                    <h2>serv2</h2>
+                    <p>Lorem ipsum dolor sit amet consectet inventore dolorem.</p>
+                </div>
+                <div>
+                    <h2>serv2</h2>
+                    <p>Lorem ipsum dolor sit. ipsum dolor sit amet consectet inventore dolorem.</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- --------portfolio---------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work animation">
+                    <img src="images/amazon3.png" alt="">
+                    <div class="layer">
+                        <h3 class="title">Amazon Clone</h3>
+                        <p>Developed an Amazon clone using React.js for a responsive and interactive user interface, with Firebase handling authentication, database, and hosting services. <br> <br> Integrated Stripe API for secure payment processing. Key features include user authentication, product browsing, cart functionality, and order management. </p>
+                        <a href="#">Github link <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work animation">
+                    <img src="images/portfolio.png" alt="">
+                    <div class="layer">
+                        <h3 class="title">Portfolio</h3>
+                        <p>Created a personal portfolio website using HTML, CSS, and JavaScript. This site features comprehensive details about my background, including education, technical skills, and projects I have completed. <br> <br> Through an intuitive and visually appealing design, it highlights my proficiency in front-end development.</p>
+                        <a href="#">Github link <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work animation">
+                    <img src="images/ecom.png" alt="">
+                    <div class="layer">
+                        <h3 class="title">E-commerce Website</h3>
+                        <p>Created an E-Commerce Website, a dynamic platform built with HTML, CSS, JavaScript, PHP, and SQL technologies. We provide a wide array of products in different categories, offering users a complete shopping experience.
+                        <br> <br> The website incorporates a robust database system to manage user profiles,
+                            ensuring personalized interactions and secure transactions.</p>
+                        <a href="#">Github link <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------contact---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>riachugh010903@gmail.com</p>
+                    <p>+91 7814266262</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ria-c-228773252/"><i class="fa-brands fa-linkedin"></i></a>
+                   </div>
+                   <div class="social-icons">
+                    <a href="https://github.com/ria190"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+                <div class="social-icons">
+                <a href="https://www.instagram.com/r.i.a_chugh/"><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+                <div class="social-icons">
+                <a href="https://www.facebook.com/ria.chugh.14/"><i class="fa-brands fa-square-facebook"></i></a>
+                </div>
+        
+                    <div class="hero-model">
+                        <model-viewer
+                        id="myModel"
+                        src="./images/3d_model.glb"
+                        camera-controls
+                        disable-pan
+                        disable-zoom
+                        interaction-prompt= "none"
+                        min-camera-orbit= "auto 20deg auto"
+                        max-camera-orbit= "auto 92deg auto"
+                        field-of-view= "35.3deg"
+                        camera-orbit="90deg 106deg auto" <!-- Initial camera orbit -->
+
+                        ></model-viewer> 
+                    </div>
+                </div>
+                
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" >  
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email"required>
+                        <input type="number" name="Phone" placeholder="Your Phone number"required>
+                        <textarea name="Message" rows="8" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <!-- <span id="msg">Thank you for the message</span> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------copyright----------- -->
+   <div id="copyright">
+    <div class="profile-links">
+        <ul>
+            <li><a href="https://leetcode.com/u/ria_19/">Leetcode</a></li>
+            <li><a href="https://codeforces.com/profile/ria_m_15">CodeForces</a></li>
+            <li><a href="https://www.codechef.com/users/ria_190">CodeChef</a></li>
+        </ul>
+    </div>
+    <p>
+        Copyright © Ria Chugh   |   Made with <i class="fa-solid fa-heart"></i>   |   2024
+    </p>
+   </div> 
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+   <script>
+       const scriptURL = 'https://script.google.com/macros/s/AKfycbwzeUNvCc1XfGYAGexOZFjhYiM9AbnyOXifeMRd2nmXi1_9nt_5cZYx84RUFtmE2D-WIw/exec'
+       const form = document.forms['submit-to-google-sheet']
+       
+       form.addEventListener('submit', e => {
+           e.preventDefault()
+           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script src="script.js"></script>
+    <script>
+        const modelViewer = document.getElementById('myModel');
+
+        // Function to handle mouse move events
+        function handleMouseMove(event) {
+            // Calculate mouse position relative to the viewport
+            const mouseX = event.clientX / window.innerWidth;
+            const mouseY = event.clientY / window.innerHeight;
+
+            // Calculate camera orbit based on mouse position
+            const minOrbitX = 180; // Minimum orbit in degrees around X axis
+            const maxOrbitX = -180;  // Maximum orbit in degrees around X axis
+            const minOrbitY = 0;  // Minimum orbit in degrees around Y axis
+            const maxOrbitY = 90;  // Maximum orbit in degrees around Y axis
+
+            const orbitX = (maxOrbitX - minOrbitX) * mouseX + minOrbitX;
+            const orbitY = (maxOrbitY - minOrbitY) * mouseY + minOrbitY;
+
+            // Update model-viewer camera orbit
+            modelViewer.cameraOrbit = `${orbitX}deg ${orbitY}deg auto`;
+        }
+
+        // Event listener to handle mousemove events on the document
+        document.addEventListener('mousemove', handleMouseMove);
+    </script>
+</body>
+</html>
+
+
+
+<!-- <div class="hero-model">
+    <model-viewer
+    src="./images/3d_model.glb"
+    camera-controls
+    disable-pan
+    disable-zoom
+    interaction-prompt= "none"
+    min-camera-orbit= "auto 55deg auto"
+    max-camera-orbit= "auto 92deg auto"
+    field-of-view= "35.3deg"
+    ></model-viewer> 
+</div> -->
