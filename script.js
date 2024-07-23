@@ -25,10 +25,10 @@ function opentab(tabname)
 var sidemenu = document.getElementById("sidemenu");
 
 function openmenu(){
-    sidemenu.style.right = "0px ";
+    sidemenu.style.right = "-115px ";
 }
 function closemenu(){
-    sidemenu.style.right = "-200px";
+    sidemenu.style.right = "-300px";
 }
 
 
